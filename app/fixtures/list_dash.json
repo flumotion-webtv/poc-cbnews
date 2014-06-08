@@ -1,0 +1,34 @@
+[
+  {
+    "id": "1",
+    "name": "car-20120827 (DASH)",
+    "likes": 999,
+    "duration": 181,
+    "thumbnail_url": "fixtures/thumb1.png",
+    "manifest": "http://yt-dash-mse-test.commondatastorage.googleapis.com/media/car-20120827-manifest.mpd"
+  },
+  {
+    "id": "2",
+    "name": "feelings_vp9 (DASH)",
+    "likes": 999,
+    "duration": 80,
+    "thumbnail_url": "fixtures/thumb2.png",
+    "manifest": "http://yt-dash-mse-test.commondatastorage.googleapis.com/media/feelings_vp9-20130806-manifest.mpd"
+  },
+  {
+    "id": "3",
+    "name": "oops-20120802 (DASH)",
+    "likes": 999,
+    "duration": 242,
+    "thumbnail_url": "fixtures/thumb3.png",
+    "manifest": "http://yt-dash-mse-test.commondatastorage.googleapis.com/media/oops-20120802-manifest.mpd"
+  },
+  {
+    "id": "4",
+    "name": "motion-20120802 (DASH)",
+    "likes": 999,
+    "duration": 112,
+    "thumbnail_url": "fixtures/thumb4.png",
+    "manifest": "http://yt-dash-mse-test.commondatastorage.googleapis.com/media/motion-20120802-manifest.mpd"
+  }
+]

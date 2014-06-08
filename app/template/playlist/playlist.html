@@ -1,0 +1,11 @@
+<div class="list-group container-fluid" style="padding: 0; margin-bottom: 0; height: 100%; overflow: auto;">
+    <a ng-repeat="item in items"
+       fmt-playlist-item
+       item="item"
+       fields="config.itemFields"
+       ng-href=""
+       ng-click="selectItem(item)"
+       class="list-group-item"
+       ng-class="itemClass(item)">
+    </a>
+</div>

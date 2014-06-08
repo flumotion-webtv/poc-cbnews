@@ -1,0 +1,17 @@
+<div class="addthis_toolbox" ng-class="toolboxClass(config.size)"
+     addthis:url="{{config.url}}"
+     addthis:title="{{config.addthisTitle}}"
+     addthis:description="{{config.addthisDescription}}">
+
+  <!--Using preferred buttons-->
+  <a ng-if="config.usePreferred"
+     ng-repeat="i in range(config.numPreferred)"
+     ng-class="'addthis_button_preferred_' + (i + 1)"
+     fmt-addthis-button></a>
+
+  <!--Using predefined buttons-->
+  <a ng-if="!config.usePreferred"
+     ng-repeat="button in config.buttons"
+     ng-class="'addthis_button_' + button"
+     fmt-addthis-button></a>
+</div>

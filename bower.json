@@ -1,0 +1,15 @@
+{
+  "name": "poc-cbnews",
+  "version": "0.0.0",
+  "dependencies": {
+    "angular": "~1.2.x",
+    "jquery": "~2.x",
+    "bootstrap": "~3.1.x",
+    "underscore": "~1.x",
+    "angular-fmt": "~0.1.2"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.2.x",
+    "angular-scenario": "~1.2.x"
+  }
+}
