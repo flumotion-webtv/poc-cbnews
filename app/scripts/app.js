@@ -3,12 +3,31 @@
 // listen song selection to update metadatas
 angular.module('app', ['fmt'])
 
-  .controller('MainCtrl', function ($rootScope, $scope, $location, $filter, $http, Url) {
+  .controller('MainCtrl', function ($rootScope, $scope, $location, $filter, $http, $timeout, Url) {
+
+    // manage show / hide of sharing widget synchronized with player control bar
+    var mouseInShare = false;
+
+    $('#social').mouseenter(function () {
+      mouseInShare = true;
+    }).mouseleave(function () {
+      mouseInShare = false;
+    });
+
+    window.onControlBarVisible = function (visible) {
+      if (visible) {
+        $('#social').show();
+      } else if (!mouseInShare) {
+        $('#social').fadeOut();
+      }
+    };
 
     // Flumotion OVRP base URL to load the content
     window.fmtBaseUrl = $location.search().fmtBaseUrl || '';
 
-    $scope.content = Url.joinUrl(window.fmtBaseUrl, 'api', 'channels', $location.search().channel, 'pods', {
+    var search = $location.search();
+    var channelId = search.channel || search.channelId || search.channel_id;
+    $scope.content = Url.joinUrl(window.fmtBaseUrl, 'api', 'channels', channelId, 'pods', {
       active: true,
       extended: true
     });
