@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<language id="es" description="Castellano">
+	<resource id="missingStringResource" value="No string for resource {0}" />
+
+	<!--StrobePlayerStrings -->
+	<resource id="hdName" value="AD" />
+	<resource id="highName" value="CA" />
+	<resource id="medName" value="CM" />
+	<resource id="lowName" value="CB" />
+	<resource id="hdDescription" value="HD" />
+	<resource id="highDescription" value="ALTA" />
+	<resource id="medDescription" value="MEDIA" />
+	<resource id="lowDescription" value="BAJA" />
+	
+	<resource id="live" value="En directo" />
+	
+	<!--StrobePlayerStrings (verbose=false)-->
+	<resource id="unknownError" value="Se ha producido un error inesperado. Rogamos disculpen las molestias." />
+	<resource id="genericError" value="Estamos teniendo problemas con la reproducción. Rogamos disculpen las molestias." />
+	<resource id="networkError" value="No fue posible conectar con la red. Rogamos disculpen las molestias." />
+	<resource id="notFoundError" value="No fue posible acceder al contenido solicitado. Rogamos disculpen las molestias." />
+	<resource id="pluginFailureError" value="No fue posible iniciar el reproductor. Rogamos disculpen las molestias." />
+
+	<!--StrobePlayerStrings (verbose=true)-->
+	<resource id="illegalInputVariable" value="Illegal input variables" />
+	<resource id="dynamicStreamingResourceExpected" value="A DynamicStreamingResource was expected along the proxy chain." />
+	<resource id="pluginNotInWhitelist" value="A plugin was not loaded because it wasn't hosted on a whitelisted server. url = {0}" />
+
+	<!--OSMFStrings-->
+	<resource id="compositeTraitNotFound" value="There is no composite trait for the given trait type" />
+	<resource id="invalidParam" value="Invalid parameter passed to method" />
+	<resource id="nullParam" value="Unexpected null parameter passed to method" />
+	<resource id="functionMustBeOverridden" value="Function must be overridden" />
+	<resource id="alreadyAdded" value="Child has already been added" />
+	<resource id="unsupportedMediaElementType" value="The specified media element type is not supported" />
+	<resource id="traitInstanceAlreadyAdded" value="An instance of this trait class has already been added to this MediaElement" />
+	<resource id="traitResolverAlreadyAdded" value="A trait resolver for the specified trait type has already been added to this MediaElement" />
+	<resource id="capabilityNotSupported" value="The specified capability is not currently supported" />
+	<resource id="mediaLoadFailed" value="The loading of a MediaElement failed" />
+	<resource id="mustSetLoader" value="Must set LoaderBase on a LoadTrait before calling load or unload" />
+	<resource id="loaderCantHandleResource" value="LoaderBase unable to handle the given MediaResourceBase" />
+	<resource id="pauseNotSupported" value="PlayTrait.pause cannot be invoked when canPause is false" />
+	<resource id="alreadyReady" value="Loader - attempt to load an already loaded object" />
+	<resource id="alreadyLoading" value="Loader - attempt to load a loading object" />
+	<resource id="alreadyUnloaded" value="Loader - attempt to unload an already unloaded object" />
+	<resource id="alreadyUnloading" value="Loader - attempt to unload a unloading object" />
+	<resource id="invalidLayoutRendererConstructor" value="Unable to construct LayoutRenderer implementation" />
+	<resource id="illegalConstructorInvocation" value="Use the static getInstance method to obtain a class instance" />
+	<resource id="directDisplayListModError" value="The direct addition or removal of display objects onto a MediaContainer is prohibited." />
+	<resource id="nullScriptPath" value="Operation requires a valid script path" />
+	<resource id="streamSwitchInvalidIndex" value="Dynamic Stream Switching - Invalid index requested" />
+	<resource id="streamSwitchStreamNotInManualMode" value="Dynamic Stream Switching - stream is not in manual mode" />
+	<resource id="drmMetadataNotSet" value="Metadata not set on DRMServices" />
+	<resource id="dvrMaximumRPCAttempts" value="Maximum DVRGetStreamInfo RPC attempts (%i) reached" />
+	<resource id="dvrUnexpectedServerResponse" value="Unexpected server response: " />
+	<resource id="f4mProfileMissing" value="Profile missing from Bootstrap info tag" />
+	<resource id="f4mMediaURLMissing" value="URL missing from Media tag" />
+	<resource id="f4mBitrateMissing" value="Bitrate missing from Media tag" />
+	<resource id="ioError" value="I/O error when loading media" />
+	<resource id="securityError" value="Security error when loading media" />
+	<resource id="asyncError" value="Async error when loading media" />
+	<resource id="argumentError" value="Argument error when loading media" />
+	<resource id="urlSchemeInvalid" value="Invalid URL scheme" />
+	<resource id="httpGetFailed" value="HTTP GET failed due to a Client Error (4xx Status Code)" />
+	<resource id="pluginVersionInvalid" value="Plugin failed to load due to version mismatch" />
+	<resource id="pluginImplementationInvalid" value="Plugin failed to load due to improper or missing implementation of PluginInfo" />
+	<resource id="soundPlayFailed" value="Playback failed due to no sound channels being available" />
+	<resource id="netConnectionRejected" value="Connection attempt rejected by FMS server" />
+	<resource id="netConnectionApplicationInvalid" value="Attempting to connect to an invalid FMS application" />
+	<resource id="netConnectionFailed" value="All NetConnection attempts failed" />
+	<resource id="netConnectionTimeout" value="Timed-out trying to establish a NetConnection, or timed out due to an idle NetConnection" />
+	<resource id="netStreamPlayFailed" value="Playback failed" />
+	<resource id="netStreamStreamNotFound" value="Stream unavailable" />
+	<resource id="netStreamFileStructureInvalid" value="File has invalid structure" />
+	<resource id="netStreamNoSupportedTrackFound" value="No supported track found" />
+	<resource id="drmSystemUpdateError" value="The update of the DRM subsystem failed" />
+	<resource id="dvrCastSubscribeFailed" value="DVRCast subscribe failed" />
+	<resource id="dvrCastContentOffline" value="DVRCast content is offline and unavailable" />
+	<resource id="dvrCastStreamInfoRetrievalFailed" value="Unable to retrieve DVRCast stream info" />
+	<resource id="multicastParameterInvalid" value="The groupspec or streamName is null or empty but not both" />
+	<resource id="multicastNotSupportMBR" value="Multicast does not support MBR" />
+	<resource id="f4MFileINVALID" value="The F4M document contains errors" />
+	
+	<!-- Buttons  -->
+	<resource id="closeBut" value="Cerrar" />
+	<resource id="cancelBut" value="Cancelar" />
+	<resource id="addBut" value="Añadir" />
+	<resource id="copyBut" value="Copiar" />
+	<resource id="shareBut" value="Compartir" />
+	
+	<!-- ControlBar -->
+	<resource id="playButton_tooltip" value="Reproducir" />
+	<resource id="pauseButton_tooltip" value="Pausar" />
+	<resource id="reloadButton_tooltip" value="Recargar" />
+	<resource id="muteButton_tooltip" value="Silenciar" />
+	<resource id="volumeButton_tooltip" value="Volumen" />
+	
+	<!--MenuDisplayPlugin -->
+	<resource id="numLikes_0" value="Le gusta a {0} personas" />
+	<resource id="numLikes_1" value="Le gusta a {0} persona" />
+	<resource id="numLikes" value="Le gusta a {0} personas" />
+	<resource id="actionShareButton_tooltip" value="Compartir" />
+	<resource id="actionLikeDetailButton_tooltip" value="Me gusta" />
+	<resource id="actionLikeButton_tooltip" value="Me gusta" />
+	<resource id="actionEmbedButton_tooltip" value="Incrustar" />
+	<resource id="actionDownloadButton_tooltip" value="Descargar" />
+	<resource id="actionCommentsButton_tooltip" value="Comentarios" />
+    <resource id="fullscreenEnterButton_tooltip" value="Pantalla completa" />
+    <resource id="fullscreenLeaveButton_tooltip" value="Salir full screen" />
+	
+	<!--RelatedContentPlugin -->
+	<resource id="relatedContentTitle" value="Vídeos relacionados" />
+	<resource id="relatedContentPlayAgain" value="Repetir" />
+	
+	<!--CommentsPlugin -->
+	<resource id="allCommentsTitle" value="Todos los comentarios" />
+	<resource id="addCommentBut" value="Añadir commentario" />
+	<resource id="addCommentTitle" value="Añadir Commentario" />
+	
+	<!-- EmbedPlugin -->
+	<resource id="embedTitle" value="Copy embed code" />
+	
+	<!-- SharePlugin -->
+	<resource id="shareNetworksTitle" value="Compartir en redes sociales" />
+	<resource id="shareEmailTitle" value="Compartir por correo" />
+	<resource id="shareEmailPrompt" value="Introduce la dirección de correo" />
+	<resource id="actionFacebookButton_tooltip" value="Facebook" />
+	<resource id="actionTwitterButton_tooltip" value="Twitter" />
+	<resource id="actionTuentiButton_tooltip" value="Tuenti" />
+	<resource id="actionGoogleButton_tooltip" value="Google+" />
+	
+	<!-- MASTPlugin -->
+	<resource id="skipAd" value="Ir al contenido" />
+</language>

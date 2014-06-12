@@ -27,10 +27,14 @@ angular.module('app', ['fmt'])
 
     var search = $location.search();
     var channelId = search.channel || search.channelId || search.channel_id;
-    $scope.content = Url.joinUrl(window.fmtBaseUrl, 'api', 'channels', channelId, 'pods', {
-      active: true,
-      extended: true
-    });
+    if (channelId) {
+      $scope.content = Url.joinUrl(window.fmtBaseUrl, 'api', 'channels', channelId, 'pods', {
+        active: true,
+        extended: true
+      });
+    } else {
+      $scope.content = search.content;
+    }
 
     var getFieldValue = function (pod, key) {
       var fields = $filter('filter')(pod.extra_fields, {name: key});
@@ -64,7 +68,7 @@ angular.module('app', ['fmt'])
         marque: getFieldValue(pod, 'marque'),
         pays: getFieldValue(pod, 'pays')
       };
-      var title = $filter('slug')($scope.fields.marque + ' ' + $scope.fields.produit + ' ' + pod.title);
+      var title = $filter('slug')(($scope.fields.marque || '') + ' ' + ($scope.fields.produit || '') + ' ' + (pod.title || pod.name));
       $scope.url = 'http://www.culturepub.fr/videos/' + title;
 
       // Make URL short using Bit.ly

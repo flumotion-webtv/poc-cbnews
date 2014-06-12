@@ -1,0 +1,44 @@
+<skin imagesLibraryPath="assets/skins/images_cbnews_v1.swf">
+	<zones>
+		<zone id="controlbar_left" padding_left="0" padding_right="5" />
+		<zone id="controlbar_center" />
+		<zone id="controlbar_right" padding_left="10" padding_right="3" />
+	</zones>
+	
+	<containers>
+		<container id="playback" zone="controlbar_left" position="1" padding_right="8" />
+		<container id="time" zone="controlbar_left" position="2" y="4" textColor="0xffffff" fontSize="11" />
+		<container id="visualseeking" zone="controlbar_center" fontSize="11" />
+		<container id="scrubbar" zone="controlbar_center" liveTrackEnabled="false" />
+		<container id="volume" zone="controlbar_right" position="1" layoutMode="horizontal" gap="1" />
+		<container id="qualities" zone="controlbar_right" position="3" y="3" textColor="0xaaaaaa" textColorDisabled="0xffffff" textColorMain="0xffffff" horizontalAlign="right" />
+		<container id="audio_selector" zone="controlbar_right" position="4" y="3" textColor="0xaaaaaa" textColorDisabled="0xffffff" textColorMain="0xffffff" horizontalAlign="right" />
+		<container id="captions" zone="controlbar_right" position="5" textColor="0xffffff" textColorDisabled="0xaaaaaa" />
+		<container id="fullscreen" zone="controlbar_right" position="6" />
+	</containers>
+    
+    <elements>
+        <element id="backdrop_center" alpha="0.8" filter="tintColor" filterColor="0x1b1c1e"/>
+        <element id="backdrop_left" alpha="0.8" filter="tintColor" filterColor="0x1b1c1e"/>
+        <element id="backdrop_right" alpha="0.8" filter="tintColor" filterColor="0x1b1c1e"/>
+        <element id="play_overlayed_normal" alpha="0.8" filter="tintColor" filterColor="0x1b1c1e"/>
+        <element id="reload_overlayed_normal" alpha="0.8" filter="tintColor" filterColor="0x1b1c1e"/>
+        <element id="play_overlayed_over" filter="tintColor" filterColor="0x1b1c1e"/>
+        <element id="reload_overlayed_over" filter="tintColor" filterColor="0x1b1c1e"/>
+        <element id="play_over" alpha="0.5"/>
+        <element id="pause_over" alpha="0.5"/>
+        <element id="reload_over" alpha="0.5"/>
+        <element id="scrub_no_load" alpha="0.2"/>
+        <element id="scrub_loaded" alpha="0.2"/>
+        <element id="volume_high_over" alpha="0.5"/>
+        <element id="volume_low_over" alpha="0.5"/>
+        <element id="volume_med_over" alpha="0.5"/>
+        <element id="volume_mute_over" alpha="0.5"/>
+        <element id="fullscreen_on_over" alpha="0.5"/>
+        <element id="fullscreen_off_over" alpha="0.5"/>
+        <element id="captions_over" alpha="0.5"/>
+        <element id="qualities_hint_2" alpha="0.9"/>
+        <element id="qualities_hint_3" alpha="0.9"/>
+        <element id="qualities_hint_4" alpha="0.9"/>
+    </elements>
+</skin>

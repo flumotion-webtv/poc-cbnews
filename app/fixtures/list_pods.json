@@ -18,6 +18,20 @@
         "url": "http://vjs.zencdn.net/v/oceans.webm",
         "mimetype": "video/webm"
       }
+    ],
+    "extra_fields": [
+      {
+        "name": "marque",
+        "value": "marque test"
+      },
+      {
+        "name": "produit",
+        "value": "produit test"
+      },
+      {
+        "name": "pays",
+        "value": "pays test"
+      }
     ]
   },
   {
@@ -27,7 +41,7 @@
     "duration": "29",
     "total_rates": "999",
     "created_on": "2013-10-08 10:57:52",
-    "thumbnail_url": "fixtures/thumb1.png",
+    "thumbnail_url": "fixtures/thumb2.png",
     "streams": [
       {
         "url": "http://demosite.ondemand.flumotion.com/demosite/ondemand/mp4/pajaro_low.mp4",
@@ -44,7 +58,7 @@
     "total_rates": "999",
     "created_on": "2013-10-08 10:57:52",
     "poster": "http://media.w3.org/2010/05/sintel/poster.png",
-    "thumbnail_url": "fixtures/thumb1.png",
+    "thumbnail_url": "fixtures/thumb3.png",
     "streams": [
       {
         "url": "http://media.w3.org/2010/05/sintel/trailer.mp4",
@@ -60,7 +74,7 @@
     "duration": "300",
     "total_rates": "999",
     "created_on": "2013-10-08 10:57:52",
-    "thumbnail_url": "fixtures/thumb1.png",
+    "thumbnail_url": "fixtures/thumb4.png",
     "streams": [
       {
         "url": "http://mediapm.edgesuite.net/osmf/content/test/train_1500.mp3",
